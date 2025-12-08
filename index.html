@@ -565,10 +565,10 @@
     <!-- 侧边栏 (Responsive) -->
     <!-- ===================== -->
     <aside id="appSidebar" class="app-sidebar">
-      <div class="px-6 py-5 flex items-center justify-between transition-all" id="sidebarHeader">
-        <a href="views/landing/landing-page.html" class="hover:opacity-80 transition-opacity" title="返回落地页">
+      <div class="px-6 py-5 flex items-center justify-between transition-all" id="sidebarHeader"> 
+        <!-- <a href="views/landing/landing-page.html" class="hover:opacity-80 transition-opacity" title="返回落地页"> 
           <img id="sidebarLogo" src="public/h_with_name.svg" class="h-8 transition-all" alt="Azoth Agent">
-        </a>
+        </a> -->
         <!-- Desktop Collapse Button -->
         <button id="sidebarToggleBtn" class="hidden md:flex text-slate-400 hover:text-slate-600 p-1.5 hover:bg-slate-100 rounded-md transition-colors" title="切换侧边栏">
             <iconify-icon id="sidebarToggleIcon" icon="carbon:side-panel-close" width="20"></iconify-icon>
@@ -613,7 +613,7 @@
           <span class="nav-text transition-opacity">全局设置</span>
         </div>
       </nav>
-      <div class="p-3 transition-all" id="sidebarFooter">
+      <!-- <div class="p-3 transition-all" id="sidebarFooter">
         <div class="p-4 bg-slate-50 rounded-2xl border border-slate-100 overflow-hidden">
           <a href="https://github.com/Feather-2/paper-burner" target="_blank" class="flex items-start gap-3 hover:opacity-80 transition-opacity" title="GitHub 仓库">
              <div class="w-10 h-10 rounded-xl bg-white border border-slate-200 flex items-center justify-center text-slate-400 shadow-sm shrink-0">
@@ -652,7 +652,7 @@
       <header class="md:hidden bg-white/80 backdrop-blur-md border-b border-slate-200 px-4 py-3 flex items-center justify-between sticky top-0 z-10">
         <a href="views/landing/landing-page.html" class="text-lg font-bold flex items-center gap-2 text-slate-800">
           <img src="public/pure.svg" class="w-7 h-7" alt="PBX Logo">
-          PBX
+          AZO
         </a>
         <div class="flex items-center gap-3">
             <button id="mobileHistoryBtn" class="text-slate-600 p-1">
@@ -676,8 +676,8 @@
                     <h1 class="text-3xl md:text-4xl font-bold text-slate-900 mb-4 tracking-tight" style="color: var(--slate-900);">
                         开始新的任务
                     </h1>
-                    <p class="text-lg text-slate-600 leading-relaxed" style="color: var(--slate-600);">
-                        配置多种OCR 引擎与 AI 翻译模型。上传文档后，Azoth Agent将给您流畅的阅读与处理体验。
+                    <!-- <p class="text-lg text-slate-600 leading-relaxed" style="color: var(--slate-600);">
+                        配置OCR 引擎与 LLM。上传文档后，Azoth Agent将完成工作。
                     </p>
                 </div>
             </div>
@@ -747,7 +747,7 @@
                             <option value="doc2x">Doc2X</option>
                         </select>
                         <div id="localOcrHint" class="text-xs text-gray-500 mt-1 hidden">
-                            <strong>本地解析</strong>：适用于文字型 PDF（非扫描件），免费且快速，但不支持图片和复杂排版的识别
+                            <strong>本地解析</strong>：适用于文字型 PDF（非扫描件），快速，但不支持图片和复杂排版的识别
                         </div>
                     </div>
 
@@ -1302,7 +1302,7 @@
                                 选择文件夹
                             </button>
                         </div>
-                        <div class="mt-4 flex flex-wrap justify-center gap-4 text-sm">
+                        <!-- <div class="mt-4 flex flex-wrap justify-center gap-4 text-sm">
                              <button id="urlImportBtn" class="text-slate-500 hover:text-purple-600 transition-colors flex items-center gap-1.5">
                                 <iconify-icon icon="carbon:link" width="16"></iconify-icon>
                                 URL 导入
