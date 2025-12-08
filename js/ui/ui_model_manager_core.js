@@ -276,7 +276,7 @@
 
       const importExportHint = document.createElement('div');
       importExportHint.className = 'text-[11px] text-slate-500 px-1';
-      importExportHint.textContent = '配置文件为 Paper Burner X 专用 JSON。';
+      importExportHint.textContent = '配置文件为 Azoth Agent 专用 JSON。';
       headerSection.appendChild(importExportHint);
 
       this.modelListColumn.appendChild(headerSection);
@@ -407,3 +407,4 @@
   window.supportedModelsForKeyManager = SUPPORTED_MODELS;
 
 })(window);
+
