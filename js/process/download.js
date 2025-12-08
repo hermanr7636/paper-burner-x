@@ -95,8 +95,8 @@ async function downloadAllResults(allResultsData) {
 
         if (result.translation) {
             const currentDate = new Date().toISOString().split('T')[0];
-            const headerDeclaration = `> *本文档由 Paper Burner 工具制作 (${currentDate})。内容由 AI 大模型翻译生成，不保证翻译内容的准确性和完整性。*\n\n`;
-            const footerDeclaration = `\n\n---\n> *免责声明：本文档内容由大模型API自动翻译生成，Paper Burner 工具不对翻译内容的准确性、完整性和合法性负责。*`;
+            const headerDeclaration = `> *本文档由 Azoth 工具制作 (${currentDate})。不保证翻译内容的准确性和完整性。*\n\n`;
+            const footerDeclaration = `\n\n---\n> *Azoth Agent：校对成功！*`;
             const contentToDownload = headerDeclaration + result.translation + footerDeclaration;
             folder.file('translation.md', contentToDownload);
         }
@@ -187,4 +187,5 @@ async function downloadAllResults(allResultsData) {
 // 将函数添加到processModule对象
 if (typeof processModule !== 'undefined') {
     processModule.downloadAllResults = downloadAllResults;
+
 }
