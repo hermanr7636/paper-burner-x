@@ -566,9 +566,6 @@
     <!-- ===================== -->
     <aside id="appSidebar" class="app-sidebar">
       <div class="px-6 py-5 flex items-center justify-between transition-all" id="sidebarHeader"> 
-        <!-- <a href="views/landing/landing-page.html" class="hover:opacity-80 transition-opacity" title="返回落地页"> 
-          <img id="sidebarLogo" src="public/h_with_name.svg" class="h-8 transition-all" alt="Azoth Agent">
-        </a> -->
         <!-- Desktop Collapse Button -->
         <button id="sidebarToggleBtn" class="hidden md:flex text-slate-400 hover:text-slate-600 p-1.5 hover:bg-slate-100 rounded-md transition-colors" title="切换侧边栏">
             <iconify-icon id="sidebarToggleIcon" icon="carbon:side-panel-close" width="20"></iconify-icon>
@@ -613,30 +610,6 @@
           <span class="nav-text transition-opacity">全局设置</span>
         </div>
       </nav>
-      <!-- <div class="p-3 transition-all" id="sidebarFooter">
-        <div class="p-4 bg-slate-50 rounded-2xl border border-slate-100 overflow-hidden">
-          <a href="https://github.com/Feather-2/paper-burner" target="_blank" class="flex items-start gap-3 hover:opacity-80 transition-opacity" title="GitHub 仓库">
-             <div class="w-10 h-10 rounded-xl bg-white border border-slate-200 flex items-center justify-center text-slate-400 shadow-sm shrink-0">
-               <iconify-icon icon="carbon:logo-github" width="24"></iconify-icon>
-             </div>
-             <div class="flex-1 min-w-0 nav-text transition-opacity">
-               <div class="flex items-center gap-1.5 mb-1">
-                 <span id="githubStars" class="inline-flex items-center gap-1 text-xs text-slate-500 bg-slate-100 px-2 py-0.5 rounded-full">
-                   <iconify-icon icon="carbon:star" width="10"></iconify-icon>
-                   <span>加载中...</span>
-                 </span>
-               </div>
-               <p class="text-xs text-slate-500">支持自部署，欢迎星标</p>
-             </div>
-          </a>
-        </div>
-        <div class="text-center py-1 mt-1 nav-text transition-opacity">
-            <span id="showCopyrightModal" class="text-[11px] text-slate-400 hover:text-slate-600 transition-colors cursor-pointer select-none">
-                Azoth Agent 丨 关于
-            </span>
-        </div>
-      </div>
-      <!-- 收起状态的底部按钮 -->
       <div id="sidebarFooterCollapsed" class="hidden flex-col items-center p-3">
         <a href="https://github.com/Feather-2/paper-burner" target="_blank" class="w-10 h-10 flex items-center justify-center text-slate-400 hover:text-slate-600 transition-colors" title="GitHub 仓库">
           <iconify-icon icon="mdi:github" width="28"></iconify-icon>
@@ -676,9 +649,6 @@
                     <h1 class="text-3xl md:text-4xl font-bold text-slate-900 mb-4 tracking-tight" style="color: var(--slate-900);">
                         开始新的任务
                     </h1>
-                    <!-- <p class="text-lg text-slate-600 leading-relaxed" style="color: var(--slate-600);">
-                        配置OCR 引擎与 LLM。上传文档后，Azoth Agent将完成工作。
-                    </p>
                 </div>
             </div>
 
@@ -1302,20 +1272,6 @@
                                 选择文件夹
                             </button>
                         </div>
-                        <!-- <div class="mt-4 flex flex-wrap justify-center gap-4 text-sm">
-                             <button id="urlImportBtn" class="text-slate-500 hover:text-purple-600 transition-colors flex items-center gap-1.5">
-                                <iconify-icon icon="carbon:link" width="16"></iconify-icon>
-                                URL 导入
-                            </button>
-                            <span class="text-slate-300">|</span>
-                            <button id="githubImportBtn" class="text-slate-500 hover:text-slate-800 transition-colors flex items-center gap-1.5">
-                                <iconify-icon icon="carbon:logo-github" width="16"></iconify-icon>
-                                GitHub 导入
-                            </button>
-                        </div>
-                    </div>
-
-                    <!-- 已选文件列表 -->
                     <div id="fileListContainer" class="hidden">
                         <div class="bg-slate-50 rounded-xl border border-slate-200 overflow-hidden">
                             <div class="px-4 py-3 border-b border-slate-200 flex justify-between items-center bg-slate-100/50">
