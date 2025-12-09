@@ -1,5 +1,5 @@
 (function(window) {
-  const DEFAULT_BRAND_LINK = 'https://github.com/Feather-2/paper-burner-x';
+  const DEFAULT_BRAND_LINK = 'https://github.com/hermanr7636/paper-burner-x';
 
 
 async function exportAsDocx(payload, options = {}, helpers = {}) {
@@ -2299,3 +2299,4 @@ function sanitizeFileName(name) {
   window.PBXHistoryExporterDocx = window.PBXHistoryExporterDocx || {};
   Object.assign(window.PBXHistoryExporterDocx, { exportAsDocx });
 })(window);
+
