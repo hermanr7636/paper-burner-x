@@ -186,7 +186,7 @@
    * @param {Object} options - 格式选项
    * @returns {string} footer.xml 内容
    */
-  function buildFooterXml(footerText = 'by Paper Burner X', options = {}) {
+  function buildFooterXml(footerText = 'by Azoth Agent', options = {}) {
     const italic = options.italic !== false;
     const fontSize = options.fontSize || 18;
     const align = options.align || 'center';
@@ -221,3 +221,4 @@
   };
 
 })(window);
+
