@@ -513,11 +513,11 @@ ${cleanedBody}
       lineFour = sanitizeCardLine(lineFour) || lineThree || '未提供信息';
 
       const cardLines = [];
-      const titleText = sanitizeCardLine(info.title || (this.payload.data && this.payload.data.name) || 'PaperBurner X 文档');
+      const titleText = sanitizeCardLine(info.title || (this.payload.data && this.payload.data.name) || 'Azoth Agent 文档');
       cardLines.push(this.createTextRun(titleText, { bold: true, fontSize: 44 }));
       cardLines.push('<w:br/>');
       if (this.options.includeBranding !== false) {
-        cardLines.push(this.createHyperlinkRun('by Paper Burner X', this.brandLink, { italic: true }));
+        cardLines.push(this.createHyperlinkRun('by Azoth Agent', this.brandLink, { italic: true }));
         cardLines.push('<w:br/>');
       }
       cardLines.push(this.createTextRun(lineThree, {}));
@@ -550,7 +550,7 @@ ${cleanedBody}
       const fileName = 'footer1.xml';
       const relId = this.createRelationship('http://schemas.openxmlformats.org/officeDocument/2006/relationships/footer', fileName);
       const footerParagraph = this.createParagraphFromRuns(
-        this.createTextRun('by Paper Burner X', { italic: true, fontSize: 18 }),
+        this.createTextRun('by Azoth Agent', { italic: true, fontSize: 18 }),
         { align: 'center', spacingAfter: 0 }
       );
       const footerXml = `<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
@@ -1760,7 +1760,7 @@ function selectCardTitle(translationMarkdown, ocrMarkdown, fallbackName) {
     if (fallbackName && fallbackName.trim()) {
       return truncateForCard(fallbackName.trim(), 50);
     }
-    return 'PaperBurner X 文档';
+    return 'Azoth Agent 文档';
   }
 
   function extractTitleFromMarkdown(markdown) {
@@ -1945,8 +1945,8 @@ ${overridesXml}
   }
 
   function buildCorePropsXml(payload, iso) {
-    const title = payload && payload.data && payload.data.name ? escapeXml(payload.data.name) : 'PaperBurner X 导出';
-    const creator = 'PaperBurner X';
+    const title = payload && payload.data && payload.data.name ? escapeXml(payload.data.name) : 'Azoth Agent 导出';
+    const creator = 'Azoth Agent';
     return `<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <cp:coreProperties xmlns:cp="http://schemas.openxmlformats.org/package/2006/metadata/core-properties" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:dcterms="http://purl.org/dc/terms/" xmlns:dcmitype="http://purl.org/dc/dcmitype/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
   <dc:title>${title}</dc:title>
@@ -1960,7 +1960,7 @@ ${overridesXml}
   function buildAppPropsXml() {
     return `<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <Properties xmlns="http://schemas.openxmlformats.org/officeDocument/2006/extended-properties" xmlns:vt="http://schemas.openxmlformats.org/officeDocument/2006/docPropsVTypes">
-  <Application>PaperBurner X</Application>
+  <Application>Azoth Agent</Application>
 </Properties>`;
   }
 
@@ -2299,4 +2299,5 @@ function sanitizeFileName(name) {
   window.PBXHistoryExporterDocx = window.PBXHistoryExporterDocx || {};
   Object.assign(window.PBXHistoryExporterDocx, { exportAsDocx });
 })(window);
+
 
